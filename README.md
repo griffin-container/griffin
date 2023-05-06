@@ -46,9 +46,9 @@ That's it!
 <ul>
 <li>Programmatic access</li>
 <li>Digital signatures</li>
-<li>XOR masks, Shamir's secret sharing etc…<br>…</li>
+<li>XOR masks, Shamir's secret sharing etc…</li>
 </ul>
-
+…
 <a href="https://github.com/griffin-container/griffin/blob/main/examples.md#usage-examples">More examples…</a>
 
 </td>
