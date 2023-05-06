@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Extract resource with command-line tool
+
+	Example:
+
+	$ node griffin.js extract-resource-with-cli-tool.html -u alice -p rabbit -q AL123
+	p@$$word
+-->
+<container>
+    <!--
+    	Use browser console tools (F12) to generate compatible 'signature' section:
+			Tools.genSignatureSettings(hashAlg, namedCurve)
+		Example:
+			Tools.genSignatureSettings("SHA-512", "P-521")
+
+			Documentation: https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md#generate-signature-settings
+    -->
+	<signature hashAlg="SHA-512">
+		<keyPair algName="ECDSA" algEcNamedCurve="P-521">
+			<privateKey keyFormat="pkcs8">
+	MIHuAgEAMBAGByqGSM49AgEGBSuBBAAjBIHWMIHTAgEBBEIAVxXz4V3WeBCsvO1r
+	QfMRX4kBOGCkdlFnJfq7tHd5PwNgJK8Voj80t6SLt6/hjANB6qvM/y1PPtrikCVL
+	4l+e37+hgYkDgYYABAAa3L2D9IevhCymWh8IqTIGilaIi64BeRtCpsxUmtUJtn29
+	cCt5JWJrSFuTSSxC+HQl1/unw6wy99foJEw+8aJL0QB5wD5lI25uGOwUGI3Hn2Jr
+	URnN+YnxP07SKwI3RyNB1RVY8SbYNzyMKwL6kZaaUmvRiAdKnfc5SUr8v5bPs9PA
+	dg==
+			</privateKey>
+			<publicKey keyFormat="spki">
+	MIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAGty9g/SHr4QsplofCKkyBopWiIuu
+	AXkbQqbMVJrVCbZ9vXAreSVia0hbk0ksQvh0Jdf7p8OsMvfX6CRMPvGiS9EAecA+
+	ZSNubhjsFBiNx59ia1EZzfmJ8T9O0isCN0cjQdUVWPEm2Dc8jCsC+pGWmlJr0YgH
+	Sp33OUlK/L+Wz7PTwHY=
+			</publicKey>
+		</keyPair>
+	</signature>
+    <users>
+        <user username="alice" password="rabbit" />
+    </users>
+    <resources>
+        <resource id="AL123" title="Alice's secret">
+            <data>p@$$word</data>
+	    	<users>
+    	    	<user username="alice" />
+    		</users>
+        </resource>
+    </resources>
+</container>

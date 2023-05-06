@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Resource id example.
+
+	Examples:
+
+	Display only resource with id=MY1:
+	https://example.com/resource-id.html#MY1
+
+	Display only resources with id=00024 and id=MY2:
+	https://example.com/resource-id.html#00024,MY2
+-->
+<container 
+		title="Resource id"
+		description="This is an optional container description. The name of the container is also optional."
+        >
+    <resources>
+		<!--
+			Resource "id" attribute is auto-generated (from "title" attribute)
+			id=00024
+		-->
+        <resource
+            title="Any title"
+            description="Resource with auto-generated ID"
+            type="text"
+            >
+            <data>
+Just a text
+            </data>
+        </resource>
+		<!--
+			User-specified "id" attribute
+			id="MY1"
+		-->
+        <resource
+			id="MY1"
+            title="Another title - 1"
+            description="Another text example - 1"
+            type="text"
+            >
+            <data>
+Another text - 1
+            </data>
+        </resource>
+		<!--
+			User-specified "id" attribute
+			id="MY2"
+		-->
+        <resource
+			id="MY2"
+            title="Another title - 2"
+            description="Another text example - 2"
+            type="text"
+            >
+            <data>
+Another text - 2
+            </data>
+        </resource>
+    </resources>
+</container>

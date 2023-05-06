@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	User attributes example.
+-->
+<container
+		title="Alice and Bob's secrets"
+		description="This is an optional container description. The name of the container is also optional."
+	>
+    <attributes>
+        <attribute id="email" label="E-Mail" type="mail" />
+        <attribute id="phone" label="Phone number" type="text" />
+    </attributes>
+
+    <users>
+        <user username="alice" password="rabbit">
+            <attributes>
+                <attribute id="email" value="alice@example.com"/>
+                <attribute id="phone" value="(555) 555-1234"/>
+            </attributes>
+        </user>
+        <user username="bob" password="dog">
+            <attributes>
+                <attribute id="email" value="bob@example.com"/>
+            </attributes>
+        </user>
+    </users>
+    <resources>
+		<!--
+			Private resource (has 'users' section, requires Sign-In)
+		-->
+        <resource
+            title="Alice's Adventures in Wonderland"
+            description="Alice's Adventures in Wonderland is an 1865 English novel by Lewis Carroll">
+            <data>
+<![CDATA[
+<b>Alice</b> was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, `and what is the use of a book,' thought <b>Alice</b> `without pictures or conversation?'
+]]>
+            </data>
+            <users>
+                <user username="alice"/>
+            </users>
+        </resource>
+		<!--
+			Public resource (no 'users' section, does not requires Sign-In)
+		-->
+        <resource
+            title="Address of Sherlock Holmes' house"
+            description="Public resources available without Sign-In">
+            <data>
+Sherlock Holmes
+221B Baker St, Marylebone, London NW1 6XE, UK
+            </data>
+            <users>
+                <user username="bob"/>
+            </users>
+        </resource>
+    </resources>
+</container>

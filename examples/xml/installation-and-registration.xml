@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Installation and registration on client example.
+-->
+<container
+		title="Installation and Registration"
+		description="This is an optional container description"
+		>
+    <users>
+		<!--
+			Alice does not need install or register the container on her browser.
+			Example: https://example.com#/some-container.html
+		-->
+        <user
+			username="alice"
+			password="rabbit"
+			/>
+		<!--
+			Bob need install the container on his browser.
+			Example: https://example.com/some-container.html#inst=12p3456
+		-->
+        <user
+			username="bob"
+			password="dog"
+			instCode="12p3456"
+			/>
+		<!--
+			Charlie need register the container on his browser.
+			Examples: https://example.com/some-container.html#reg,
+					  https://example.com/some-container.html#reg=ABCD74 (to auto fill a register dialog)
+		-->
+        <user
+			username="charlie"
+			password="cow"
+			regCode="ABCD74"
+			/>
+		<!--
+			Dave need install and register the container on his browser.
+			Examples: https://example.com/some-container.html#inst=aWk21p&reg
+			          https://example.com/some-container.html#inst=aWk21p&reg&reg=72r30K (to auto fill a register dialog)
+		-->
+        <user
+			username="dave"
+			password="horse"
+			instCode="aWk21p"
+			regCode="72r30K"
+			/>
+    </users>
+    <resources>
+        <resource
+            title="Alice's resource"
+            description="Alice does not need install or register the container on her browser"
+        	>
+            <users>
+                <user username="alice"/>
+            </users>
+            <data>
+Some Alice's secret info...
+            </data>
+        </resource>
+        <resource
+            title="Bob's resource"
+            description="Bob need install the container on his browser"
+        	>
+            <users>
+                <user username="bob"/>
+            </users>
+            <data>
+Some Bob's secret info...
+            </data>
+        </resource>
+        <resource
+            title="Charlie's resource"
+            description="Charlie need register the container on his browser"
+       		>
+            <users>
+                <user username="charlie"/>
+            </users>
+            <data>
+Some Charlie's secret info...
+            </data>
+        </resource>
+        <resource
+            title="Dave's resource"
+            description="Dave need install and register the container on this browser"
+        	>
+            <users>
+                <user username="dave"/>
+            </users>
+            <data>
+Some Dave's secret info...
+            </data>
+        </resource>
+    </resources>
+</container>

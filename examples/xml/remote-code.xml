@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Remote secret example.
+-->
+<container
+		title="Remote secret"
+		description="This is an optional container description"
+		>
+    <requests>
+         <request id="remote-secret-alice" url="http://localhost:8080">
+             {"method": "GET", "headers": {"Authorization": "Bearer 1234567890"}}
+         </request>
+    </requests>
+	<users>
+     	<!--
+	    	Use browser console tools (F12) to generate random string:
+				Tools.genRandomString(len)
+			Example:
+				Tools.genRandomString(640)
+    	-->
+        <user
+        	username="alice"
+        	password="rabbit"
+            remoteCodeRequestId="remote-secret-alice"        	
+        	remoteCode="2bMjpn56eLEutHVWpcRPmHGifJIfQLqivN5YUirvgN6R18uGU7hnKt8mjZUMo8tf"
+        	/>
+    </users>
+    <resources>
+		<!--
+			Private resource (has 'users' section, requires Sign-In)
+		-->
+        <resource
+            title="Alice's secret"
+            description="Some Alice's secret description"
+            >
+            <data>
+            <data>p@$$word</data>
+            </data>
+            <users>
+                <user username="alice"/>
+            </users>
+        </resource>
+    </resources>
+</container>

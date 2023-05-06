@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Protected resources example.
+-->
+<container
+		title="Protected resources"
+		description="This is an optional container description. The name of the container is also optional."
+		>
+    <users>
+        <user username="alice" password="rabbit"/>
+    </users>
+    <resources>
+    	<!--
+	    	Password-protected public resource
+     	-->
+        <resource
+            title="Address of Sherlock Holmes' house"
+            description="Public resources available without Sign-In"
+            password="Watson"
+        	>
+        	<data>
+Sherlock Holmes
+221B Baker St, Marylebone, London NW1 6XE, UK
+            </data>
+        </resource>
+    	<!--
+	    	XOR mask protected public resource
+     	-->
+     	<!--
+	    	Use browser console tools (F12) to generate random string:
+				Tools.genRandomString(len)
+			Example:
+				Tools.genRandomString(640)
+    	-->
+        <resource
+            title="Address of Sherlock Holmes' house (XOR mask)"
+            description="Public resources available without Sign-In"
+            xorMask="
+CkaPUu1HcS0imlJYqOo6sMb8CA3LrOUwGDOTwUmcoo0bRAOBU8txi0C6Ulboo49D
+QrEK8nLXVohLRQwjLXO8A4YG7y5yYGbsAEmpqAnhgGSbPJPk5B6BRi8ja5GBahBf
+WemheSwjJNbghKCo3Vg9Eey6lnVVPM3KzJf1sobuHQqy6jwMc1cHgI4LKwpi5tu5
+R3mTinRrWv9ZqZ3pV3OHM7eokXpjlelLD26pR4Lee7gcC4ptDcU8egPLZu7lRyEi
+YypNwBbTY5YOZZUpGsJnVci0tmyC48K3NfEN6Fe2Afm7mFtjYCarVUFJECsRUGSo
+AUhqGpYk70mLGBCP2iJOcek04LiWGQFDJnInyNChsSashNyV4AXHWyJIFjHyEahK
+QsSm9vy0dVr9WdMeu3JuXpJV3t6BJnOcg8oXUN4BjWcSDSeKTWahcwXPaiTMpodK
+ZJVpoHSHhhElhLATgke9usbK7PyAdZByv9KP76BLHxYlcAmALrE40DNxUmSAR6MM
+dmJyKDiYTxG6oGD1L564avymaaEqCRAMs3Dl4zn6yetJlTOEO0kuG2jChB5J841C
+FEUKpoUFvtAEcMeZG1VhbwXeTUloxiTZ09yzGsQpBUqKabRqvsnQvwNQp0fLJoyc"
+        	>
+            <data>
+Sherlock Holmes
+221B Baker St, Marylebone, London NW1 6XE, UK
+            </data>
+        </resource>
+    	<!--
+	    	Password and XOR mask protected public resource
+     	-->
+     	<!--
+	    	Use browser console tools (F12) to generate random string:
+				Tools.genRandomString(len)
+			Example:
+				Tools.genRandomString(640)
+    	-->
+        <resource
+            title="Address of Sherlock Holmes' house (Password + XOR mask)"
+            description="Public resources available without Sign-In"
+            password="Watson"
+            xorMask="
+CkaPUu1HcS0imlJYqOo6sMb8CA3LrOUwGDOTwUmcoo0bRAOBU8txi0C6Ulboo49D
+QrEK8nLXVohLRQwjLXO8A4YG7y5yYGbsAEmpqAnhgGSbPJPk5B6BRi8ja5GBahBf
+WemheSwjJNbghKCo3Vg9Eey6lnVVPM3KzJf1sobuHQqy6jwMc1cHgI4LKwpi5tu5
+R3mTinRrWv9ZqZ3pV3OHM7eokXpjlelLD26pR4Lee7gcC4ptDcU8egPLZu7lRyEi
+YypNwBbTY5YOZZUpGsJnVci0tmyC48K3NfEN6Fe2Afm7mFtjYCarVUFJECsRUGSo
+AUhqGpYk70mLGBCP2iJOcek04LiWGQFDJnInyNChsSashNyV4AXHWyJIFjHyEahK
+QsSm9vy0dVr9WdMeu3JuXpJV3t6BJnOcg8oXUN4BjWcSDSeKTWahcwXPaiTMpodK
+ZJVpoHSHhhElhLATgke9usbK7PyAdZByv9KP76BLHxYlcAmALrE40DNxUmSAR6MM
+dmJyKDiYTxG6oGD1L564avymaaEqCRAMs3Dl4zn6yetJlTOEO0kuG2jChB5J841C
+FEUKpoUFvtAEcMeZG1VhbwXeTUloxiTZ09yzGsQpBUqKabRqvsnQvwNQp0fLJoyc"
+        	>
+            <data>
+Sherlock Holmes
+221B Baker St, Marylebone, London NW1 6XE, UK
+            </data>
+        </resource>
+    </resources>
+</container>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="main" name="">
+	<property name="project" value="${basedir}" />
+	<property name="workspace" value="${project}/.." />
+	<property name="user_home" value="${user.home}" />
+
+	<target name="main">
+		<delete file="${user.home}/Downloads/griffin.html" />	
+		<delete file="${user.home}/Downloads/hello-world.html" />
+	</target>
+</project>

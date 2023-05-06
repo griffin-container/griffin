@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Lock (disable) user profile.
+-->
+<container
+		title="Lock user profile"
+		description="Lock (disable) user profile"
+		>
+    <requests>
+         <request id="remote-secret-alice" url="http://localhost:8080">
+             {"method": "GET", "headers": {"Authorization": "Bearer 1234567890"}}
+         </request>
+         <request id="disable-user-profile-alice" url="http://localhost:8080">
+             {"method": "DELETE", "headers": {"Authorization": "Bearer 1234567890"}}
+         </request>
+    </requests>
+	<users>
+     	<!--
+	    	Use browser console tools (F12) to generate random string:
+				Tools.genRandomString(len)
+			Example:
+				Tools.genRandomString(640)
+    	-->
+        <user
+        	username="alice"
+        	password="rabbit"
+        	disableUserProfileRequestId="disable-user-profile-alice"
+            remoteCodeRequestId="remote-secret-alice"        	
+        	remoteCode="
+        	2bMjpn56eLEutHVWpcRPmHGifJIfQLqivN5YUirvgN6R18uGU7hnKt8mjZUMo8tf
+			PuBaSpiV9cbE5NuxUlKMiG9n3o1sZzTW0cnu0uqGXly3jsMxO9QWZKaV8FiZeJXu
+			CD9WmMB0BF9bJ7w8fVUMTwLnssoxbYSeXPLB93oG4GLgGDExhAiVubRcal0MFTu2
+			pq2TUzek9F2c9lYskZ8nHXiniBMno78YJcBXzRpElrn0qiHSxCFHuCa7XEHq3LeW
+			7qMiBtLkBivDnqlWKpGnxO1adZrqZ7qkKPC8D5GStfvCUBgRmJNkXZT2S5pbveKj
+			ChEWPw3JJbL2TYfHbipBMRWlFo9nrGIkzrfiogwp3FDooKmO5PbfAuHWgFQVAaEu
+			ATdlXJ6aBw5JkOV8l8Hso74QScYSOB7vt36CU2Mc6n5Dmx0783xzVEofEZhGjV3y
+			Jh0GH1evXg1SLQZLZlq9YdB7CMVaM5W8FJEZUNVaskV9U4oHc88paJN0GVkkvHaG
+			ifENZeiETRlbzJvVxMQV99RqSEPOnrpW6fttHvy4p8DePScWRRQydfgo7jdgITL0
+			GXEnpAq9JvguCIli1veQ2u0R68Oj5kdPethk0Uq9mIKMtTOvsVqSJJYxEmtdv2mm
+			"
+        	/>
+    </users>
+
+    <resources>
+		<!--
+			Private resource (has 'users' section, requires Sign-In)
+		-->
+        <resource
+            title="Alice's Adventures in Wonderland"
+            description="Alice's Adventures in Wonderland is an 1865 English novel by Lewis Carroll"
+            >
+            <data>
+<![CDATA[
+<b>Alice</b> was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, `and what is the use of a book,' thought <b>Alice</b> `without pictures or conversation?'
+]]>
+            </data>
+            <users>
+                <user username="alice"/>
+            </users>
+        </resource>
+		<!--
+			Public resource (no 'users' section, does not requires Sign-In)
+		-->
+        <resource
+            title="Address of Sherlock Holmes' house"
+            description="Public resources available without Sign-In"
+            >
+            <data>
+Sherlock Holmes
+221B Baker St, Marylebone, London NW1 6XE, UK
+            </data>
+        </resource>
+    </resources>
+</container>

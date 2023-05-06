@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Session expiration settings example
+-->
+<container
+		title="Alice secrets"
+		description="This is an optional container description. The name of the container is also optional."
+    	>
+    <users>
+    	<!--
+    		Session expiration time for Alice:
+ 	    	sessionTimeoutSec        - Session expiration time (in seconds)
+	    	sessionTimeoutWarningSec - Display time of session expiration time warning message (in seconds)
+    	-->
+        <user
+            username="alice"
+            password="rabbit"
+ 	    	sessionTimeoutSec="10"
+	    	sessionTimeoutWarningSec="5"
+			/>
+    	<!--
+			No session expiration time for Bob
+    	-->
+        <user
+         	username="bob"
+         	password="dog"
+        	/>
+    </users>
+    <resources>
+        <resource
+            title="Alice's Adventures in Wonderland"
+            description="Alice's Adventures in Wonderland is an 1865 English novel by Lewis Carroll"
+        	>
+            <data>
+<![CDATA[
+<b>Alice</b> was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, `and what is the use of a book,' thought <b>Alice</b> `without pictures or conversation?'
+]]>
+            </data>
+            <users>
+                <user username="alice"/>
+            </users>
+        </resource>
+    </resources>
+</container>
