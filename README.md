@@ -44,12 +44,10 @@ That's it!
 <br><br>
 <b>GET MORE!</b>
 <ul>
-<li>Programmatic access</li>
-<li>Digital signatures</li>
+<li>Programmatic access…</li>
+<li>Digital signatures…</li>
 <li>XOR masks, Shamir's secret sharing etc…</li>
 </ul>
-…<br>
 <a href="https://github.com/griffin-container/griffin/blob/main/examples.md#usage-examples">More examples…</a>
-
 </td>
 </tr></table>
