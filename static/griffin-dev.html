@@ -7336,30 +7336,34 @@ integrityVerificationTest(DOC_CONTENT,
 });
 
 // back button clicked
-window.addEventListener('previous', function(){
-	for (const menuEl of menuEls)
-		if (menuEl.style.display != 'none') {
-			menuEl.style.display = 'none'
-			return;
-		}
-	//
-	for (const dialogEl of dialogsEls)
-		if (dialogEl.open) {
-			dialogEl.close();
-			clearQrDialog()
-			clearDecryptDialog();
-			clearLoginDialog();
-		    clearRegisterDialog();
-		    clearUnregisterDialog();
-			clearBlockDialog();
-			return;
-		}
-	//
-	for (const statusMessageEl of statusMessagesEls) {
-		statusMessageEl.style.display = 'none';
-		statusMessageMargin.style.display = 'none';
-	}
-}, false);
+// window.addEventListener('popstate', function() {
+// 	for (const menuEl of menuEls)
+// 		if (menuEl.style.display != 'none') {
+// 			menuEl.style.display = 'none'
+// 			return;
+// 		}
+// 	//
+// 	for (const dialogEl of dialogsEls)
+// 		if (dialogEl.open) {
+// 			dialogEl.close();
+// 			clearQrDialog()
+// 			clearDecryptDialog();
+// 			clearLoginDialog();
+// 		    clearRegisterDialog();
+// 		    clearUnregisterDialog();
+// 			clearBlockDialog();
+// 			return;
+// 		}
+// 	//
+// 	for (const statusMessageEl of statusMessagesEls) {
+// 		if (statusMessageEl.style.display != 'none') {
+// 			statusMessageEl.style.display = 'none';
+// 			statusMessageMargin.style.display = 'none';
+// 			return
+// 		}
+// 	}
+// 	history.back();
+// }, false);
  
 /* close status message with Escape key */
 document.addEventListener('keydown', e => {
