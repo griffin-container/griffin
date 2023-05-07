@@ -4,6 +4,7 @@
 	<property name="workspace" value="${project}/.." />
 	<property name="user_home" value="${user.home}" />
 
+	<echo message="${ant.version}" />
 	<target name="main">
 		<copy overwrite="true" verbose="trie" file="${user.home}/Downloads/griffin.html" todir="${workspace}/griffin-container.github.io"/>	
 		<copy overwrite="true" verbose="trie" file="${user.home}/Downloads/hello-world.html" todir="${workspace}/griffin-container.github.io/examples/html"/>

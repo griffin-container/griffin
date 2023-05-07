@@ -4,7 +4,27 @@
 	<property name="workspace" value="${project}/.." />
 	<property name="user_home" value="${user.home}" />
 
+	<echo message="${ant.version}" />
+
+	<scriptdef name="file.mdate" language="javascript"> 
+	    <attribute name="file"/> 
+	    <attribute name="property"/> 
+	        file_name = attributes.get("file"); 
+	        property_to_set = attributes.get("property");
+
+	        file = new java.io.File(file_name); 
+	        file_date = file.lastModified();
+
+	        date_format = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	        formated_date = date_format.format(new java.util.Date(file_date));
+	        project.setNewProperty(property_to_set, formated_date);
+	</scriptdef>
+
+	<file.mdate file="${project}/static/griffin-dev.html" property="file.modified.date"/>
+	
 	<target name="main">
+		<copy overwrite="true" verbose="trie" file="${project}/static/griffin-dev.html" tofile="${project}/static/griffin-dev-0.html"/>
+		<replace file="${project}/static/griffin-dev-0.html" token="1970-01-01 00:00:00" value="${file.modified.date}"/>
 		<delete file="${user.home}/Downloads/griffin.html" />	
 		<delete file="${user.home}/Downloads/hello-world.html" />
 	</target>

@@ -36,6 +36,7 @@ Please search for #third-party for third-party resources
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="theme-color" content="DeepSkyBlue"/>
+<meta name="buildTimestamp" content="1970-01-01 00:00:00">
 <meta name="srcDigest" content="">
 <meta name="docDigest" content="">
 <meta name="publicKey" content="">
@@ -6821,7 +6822,7 @@ async function displayContainer() {
 	if (isServedOnline() || IS_STANDALONE) { // we need 'Download' button
 		downloadIcon.style.display = 'flex';
 		downloadIcon.addEventListener('click', (e) => {
-			const fileName = WAS_EMPTY ? FILE_NAME_HTML : metaContainerUuidEl.getAttribute('content') + '.html';
+			const fileName = WAS_EMPTY ? FILE_NAME_HTML : location.href.split('/').pop().split('#')[0].split('?')[0];
 			downloadAsTextlFile(fileName, DOC_CONTENT, 'text/html');
 	    });
 	} else
