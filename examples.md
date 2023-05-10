@@ -7,8 +7,8 @@ Some examples require pre-generated:
 - key pairs for electronic signatures
 - shared secrets
 
-To simplify the generation of the above stuff, you can use the built-in tools, a kind of Swiss Army Knife:<br>
-<a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md#griffin-browser-console-tools">GRIFFIN browser console tools</a>
+To simplify the generation of the above stuff, you can use the built-in tools (a kind of Swiss Army Knife):<br>
+<a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools</a>
 
 <br>
 
