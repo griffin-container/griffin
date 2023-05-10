@@ -9,6 +9,7 @@ The GRIFFIN command-line tool is designed to allow you to:
 	<li>Get container metadata</li>
 	<li>Get list of container resources</li>
 </ul>
+The GRIFFIN command-line tool is built-in into every container and can be downloaded offline.
 
 <br>
 

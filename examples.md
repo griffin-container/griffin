@@ -8,7 +8,7 @@ Some examples require pre-generated:
 - shared secrets
 
 To simplify the generation of the above stuff, you can use the built-in tools (a kind of Swiss Army Knife):<br>
-<a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools</a>
+<a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a>
 
 <br>
 
@@ -20,8 +20,8 @@ Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples
 
 ## ◽️ Extra resource protection with a resource password and(or) XOR mask
 
-Tip:<br>
-Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md#griffin-browser-console-tools">GRIFFIN browser console tools</a> to generate random cryptographic materials.
+<b>Tip:</b><br>
+Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a> to generate random cryptographic materials.
 
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/protected-resources.xml">protected-resources.xml</a>
 
@@ -33,15 +33,15 @@ Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples
 
 ## ◽️ Use a pre-created shared secrets instead a passwords
 
-Tip:<br>
-Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md#griffin-browser-console-tools">GRIFFIN browser console tools</a> to generate compatible shared secrets.
+<b>Tip:</b><br>
+Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a> to generate compatible shared secrets.
 
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/shared-secret.xml">shared-secret.xml</a>
 
 ## ◽️ Protect your container with a digital signature
 
-Tip:<br>
-Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md#griffin-browser-console-tools">GRIFFIN browser console tools</a> to generate compatible digital signature section.
+<b>Tip:</b><br>
+Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a> to generate compatible digital signature section.
 
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/signed-container.xml">signed-container.xml</a>
 
@@ -71,6 +71,10 @@ Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples
 
 ## ◽️ Extract resource with command-line tool
 
+Go to menu (top-left corner) and choose:<br>
+<b>Download command-line tool</b><br>
+The GRIFFIN command-line tool is built-in into every container and can be downloaded offline.
+<br><br>
 Command line:
 ```console
 $ node griffin.js extract-resource-with-cli-tool.html -u alice -p rabbit -q AL123
@@ -86,4 +90,4 @@ p@$$word
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/extract-resource-with-cli-tool.xml">extract-resource-with-cli-tool.xml</a>
 
 See more:<br>
-<a href="https://github.com/griffin-container/griffin/blob/main/command-line-tool.md#command-line-tool">Command-line tool</a>
+<a href="https://github.com/griffin-container/griffin/blob/main/command-line-tool.md">Command-line tool</a>

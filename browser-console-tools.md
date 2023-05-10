@@ -2,31 +2,9 @@
 
 <br>
 
-The GRIFFIN Browser Console Tools (GBCT) help you to generate compatible cryptographic materials, key pairs for electronic signatures, shared secrets.<br>
-To access GBCT, use the F12 key to open DevTools console in your browser.
+The GRIFFIN Browser Console Tools (GBCT) help you to generate compatible cryptographic materials, key pairs for electronic signatures and shared secrets.<br>
+To access GBCT, use the <b>F12</b> key to open DevTools console in your browser.
 <br><br>
-
-## Split long string into chunks
-
-<br>
-Browser console:
-
-```javascript
-Tools.chuncString("ZW9yYQ0AAABMYXZmNTcuMjYuMTAwAQBbmNvZGVyPUxhdmM1Ny4yNC4xMDUgbGlidGhlb3JhgnW9", 64)
-
-// "ZW9yYQ0AAABMYXZmNTcuMjYuMTAwAQBbmNvZGVyPUxhdmM1Ny4yNC4xMDUgbGlidGhlb3JhgnW9" - source string
-// 64                                                                            - length of generated chunks
-```
-
-<br>
-Output:
-
-```text
-ZW9yYQ0AAABMYXZmNTcuMjYuMTAwAQBbmNvZGVyPUxhdmM1Ny4yNC4xMDUgbGlid
-Ghlb3JhgnW9
-```
-
-<br>
 
 ## Generate random string
 
@@ -48,6 +26,28 @@ Nwga277XseAKx4obJIrVRcsdj1Z04Zq95Wn0vVP32Wue0ndycBkVfDXwXjp6lkcY
 LYGXtOtadWyxzDBNmCWhnrImdaTF3q3IUhM6h83IYtD7CpHskzRxpt6SkRPOynOW
 styAfmXItowDVVr0II8aIMeNAoxENYRsBHhivB0C9ljcqkUn1x6Ze5fslV43Q9tZ
 fh1QY7Emo6gXdnhj0NgvaTQBtwRWYqmakVjDfWpm2vrY0YawjZpqgISQ0ufms4i5
+```
+
+<br>
+
+## Split long string into chunks
+
+<br>
+Browser console:
+
+```javascript
+Tools.chuncString("ZW9yYQ0AAABMYXZmNTcuMjYuMTAwAQBbmNvZGVyPUxhdmM1Ny4yNC4xMDUgbGlidGhlb3JhgnW9", 64)
+
+// "ZW9yYQ0AAABMYXZmNTcuMjYuMTAwAQBbmNvZGVyPUxhdmM1Ny4yNC4xMDUgbGlidGhlb3JhgnW9" - source string
+// 64                                                                            - length of generated chunks
+```
+
+<br>
+Output:
+
+```text
+ZW9yYQ0AAABMYXZmNTcuMjYuMTAwAQBbmNvZGVyPUxhdmM1Ny4yNC4xMDUgbGlid
+Ghlb3JhgnW9
 ```
 
 <br>
