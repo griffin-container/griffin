@@ -1,4 +1,4 @@
-# GRIFFIN Command-line tool
+# GRIFFIN command-line tool
 
 <br>
 
