@@ -72,8 +72,8 @@ Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples
 ## ◽️ Extract resource with command-line tool
 
 Go to menu (top-left corner) and choose:<br>
-<b>Download command-line tool</b><br>
-The GRIFFIN command-line tool is built-in into every container and can be downloaded offline.
+<b>Download command-line tool</b><br><br>
+The <a href="https://github.com/griffin-container/griffin/blob/main/command-line-tool.md">GRIFFIN command-line tool</a> is built-in into every container and can be downloaded offline.
 <br><br>
 Command line:
 ```console
@@ -90,4 +90,4 @@ p@$$word
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/extract-resource-with-cli-tool.xml">extract-resource-with-cli-tool.xml</a>
 
 See more:<br>
-<a href="https://github.com/griffin-container/griffin/blob/main/command-line-tool.md">Command-line tool</a>
+<a href="https://github.com/griffin-container/griffin/blob/main/command-line-tool.md">GRIFFIN command-line tool</a>
