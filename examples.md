@@ -2,11 +2,11 @@
 
 <br>
 
-Some examples require the generation
+Some examples require pre-generated:
 - random cryptographic materials
 - key pairs for electronic signatures
 - shared secrets
-<br>
+
 To simplify the generation of the above stuff, you can use the built-in tools, a kind of Swiss Army Knife:<br>
 <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md#griffin-browser-console-tools">GRIFFIN browser console tools</a>
 
