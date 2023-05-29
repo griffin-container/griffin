@@ -41,7 +41,7 @@ username: <code>bob  </code>, password: <code>dog   </code>
 
 That's it!
 <br><br>
-<b>GET MORE_</b>
+<b>GET MORE…</b>
 <ul>
 <li>Programmatic access…</li>
 <li>Digital signatures…</li>
