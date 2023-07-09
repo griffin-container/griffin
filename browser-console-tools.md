@@ -2,7 +2,7 @@
 
 <br>
 
-The GRIFFIN Browser Console Tools (GBCT) help you to generate compatible cryptographic materials, key pairs for electronic signatures and shared secrets.<br>
+The <b>GRIFFIN Browser Console Tools (GBCT)<b> (built-in into every container) help you to generate compatible cryptographic materials, key pairs for electronic signatures and shared secrets.<br>
 To access GBCT, use the <b>F12</b> key to open DevTools console in your browser.
 <br><br>
 
