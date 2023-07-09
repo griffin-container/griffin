@@ -12,43 +12,43 @@ To simplify the generation of the above stuff, you can use the built-in tools (a
 
 <br>
 
-## ◽️ Hello, World!
+## Hello, World!
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/hello-world.xml">hello-world.xml</a>
 
-## ◽️ Public, private and shared resources
+## Public, private and shared resources
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/public-private-shared-resources.xml">public-private-shared-resources.xml</a>
 
-## ◽️ Extra resource protection with a resource password and(or) XOR mask
+## Extra resource protection with a resource password and(or) XOR mask
 
 <b>Tip:</b><br>
 Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a> to generate random cryptographic materials.
 
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/protected-resources.xml">protected-resources.xml</a>
 
-## ◽️ Protect your container by pairing it with a specific device
+## Protect your container by pairing it with a specific device
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/installation-and-registration.xml">installation-and-registration.xml</a>
 
-## ◽️ Set session expiration time
+## Set session expiration time
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/session-expiration-settings.xml">session-expiration-settings.xml</a>
 
-## ◽️ Use a pre-created shared secrets instead a passwords
+## Use a pre-created shared secrets instead a passwords
 
 <b>Tip:</b><br>
 Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a> to generate compatible shared secrets.
 
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/shared-secret.xml">shared-secret.xml</a>
 
-## ◽️ Protect your container with a digital signature
+## Protect your container with a digital signature
 
 <b>Tip:</b><br>
 Use the <a href="https://github.com/griffin-container/griffin/blob/main/browser-console-tools.md">GRIFFIN Browser Console Tools (GBCT)</a> to generate compatible digital signature section.
 
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/signed-container.xml">signed-container.xml</a>
 
-## ◽️ Additional protection with user attributes
+## Additional protection with user attributes
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/user-attributes.xml">user-attributes.xml</a>
 
-## ◽️ Display resources by resource ID
+## Display resources by resource ID
 
 Display only resource with <code>id=MY1</code>:
 ```text
@@ -63,13 +63,13 @@ https://example.com/resource-id.html#00024,MY2
 ```
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/resource-id.xml">resource-id.xml</a>
 
-## ◽️ Lock your profile in case of a container leak<br>(Requires a REST endpoint that provides a remote access code)
+## Lock your profile in case of a container leak<br>(Requires a REST endpoint that provides a remote access code)
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/lock-user-profile.xml">lock-user-profile.xml</a>
 
-## ◽️ Lock user profiles remotely<br>(Requires a REST endpoint that provides a remote access code)
+## Lock user profiles remotely<br>(Requires a REST endpoint that provides a remote access code)
 Source: <a href="https://github.com/griffin-container/griffin/blob/main/examples/xml/remote-code.xml">remote-code.xml</a>
 
-## ◽️ Extract resource with command-line tool
+## Extract resource with command-line tool
 
 Go to menu (top-left corner) and choose:<br>
 <b>Download command-line tool</b><br><br>
