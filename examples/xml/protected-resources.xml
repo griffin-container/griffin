@@ -15,7 +15,7 @@
      	-->
         <resource
             title="Address of Sherlock Holmes' house"
-            description="Public resources available without Sign-In"
+            description="Password: Watson"
             password="Watson"
         	>
         	<data>
@@ -34,7 +34,17 @@ Sherlock Holmes
     	-->
         <resource
             title="Address of Sherlock Holmes' house (XOR mask)"
-            description="Public resources available without Sign-In"
+            description="XOR-mask:
+CkaPUu1HcS0imlJYqOo6sMb8CA3LrOUwGDOTwUmcoo0bRAOBU8txi0C6Ulboo49D
+QrEK8nLXVohLRQwjLXO8A4YG7y5yYGbsAEmpqAnhgGSbPJPk5B6BRi8ja5GBahBf
+WemheSwjJNbghKCo3Vg9Eey6lnVVPM3KzJf1sobuHQqy6jwMc1cHgI4LKwpi5tu5
+R3mTinRrWv9ZqZ3pV3OHM7eokXpjlelLD26pR4Lee7gcC4ptDcU8egPLZu7lRyEi
+YypNwBbTY5YOZZUpGsJnVci0tmyC48K3NfEN6Fe2Afm7mFtjYCarVUFJECsRUGSo
+AUhqGpYk70mLGBCP2iJOcek04LiWGQFDJnInyNChsSashNyV4AXHWyJIFjHyEahK
+QsSm9vy0dVr9WdMeu3JuXpJV3t6BJnOcg8oXUN4BjWcSDSeKTWahcwXPaiTMpodK
+ZJVpoHSHhhElhLATgke9usbK7PyAdZByv9KP76BLHxYlcAmALrE40DNxUmSAR6MM
+dmJyKDiYTxG6oGD1L564avymaaEqCRAMs3Dl4zn6yetJlTOEO0kuG2jChB5J841C
+FEUKpoUFvtAEcMeZG1VhbwXeTUloxiTZ09yzGsQpBUqKabRqvsnQvwNQp0fLJoyc"
             xorMask="
 CkaPUu1HcS0imlJYqOo6sMb8CA3LrOUwGDOTwUmcoo0bRAOBU8txi0C6Ulboo49D
 QrEK8nLXVohLRQwjLXO8A4YG7y5yYGbsAEmpqAnhgGSbPJPk5B6BRi8ja5GBahBf
@@ -63,7 +73,17 @@ Sherlock Holmes
     	-->
         <resource
             title="Address of Sherlock Holmes' house (Password + XOR mask)"
-            description="Public resources available without Sign-In"
+            description="Password: Watson, XOR-mask:
+CkaPUu1HcS0imlJYqOo6sMb8CA3LrOUwGDOTwUmcoo0bRAOBU8txi0C6Ulboo49D
+QrEK8nLXVohLRQwjLXO8A4YG7y5yYGbsAEmpqAnhgGSbPJPk5B6BRi8ja5GBahBf
+WemheSwjJNbghKCo3Vg9Eey6lnVVPM3KzJf1sobuHQqy6jwMc1cHgI4LKwpi5tu5
+R3mTinRrWv9ZqZ3pV3OHM7eokXpjlelLD26pR4Lee7gcC4ptDcU8egPLZu7lRyEi
+YypNwBbTY5YOZZUpGsJnVci0tmyC48K3NfEN6Fe2Afm7mFtjYCarVUFJECsRUGSo
+AUhqGpYk70mLGBCP2iJOcek04LiWGQFDJnInyNChsSashNyV4AXHWyJIFjHyEahK
+QsSm9vy0dVr9WdMeu3JuXpJV3t6BJnOcg8oXUN4BjWcSDSeKTWahcwXPaiTMpodK
+ZJVpoHSHhhElhLATgke9usbK7PyAdZByv9KP76BLHxYlcAmALrE40DNxUmSAR6MM
+dmJyKDiYTxG6oGD1L564avymaaEqCRAMs3Dl4zn6yetJlTOEO0kuG2jChB5J841C
+FEUKpoUFvtAEcMeZG1VhbwXeTUloxiTZ09yzGsQpBUqKabRqvsnQvwNQp0fLJoyc"
             password="Watson"
             xorMask="
 CkaPUu1HcS0imlJYqOo6sMb8CA3LrOUwGDOTwUmcoo0bRAOBU8txi0C6Ulboo49D
